@@ -8,7 +8,7 @@ const createPostIntoDB = async (payload: TPost) => {
 };
 
 const getAllPostFromDB = async (query: Record<string, unknown>) => {
-  const postSearchableQuery = ['postDetails'];
+  const postSearchableQuery = ['title', 'description'];
 
   const postQuery = new QueryBuilder(Post.find({}), query).search(
     postSearchableQuery,

@@ -39,8 +39,11 @@ const getSinglePost = catchAsync(async (req, res) => {
   });
 });
 
+
+
 export const postController = {
   createPost,
   getAllPost,
   getSinglePost,
+
 };

@@ -3,6 +3,11 @@ import { TPost } from './post.interface';
 
 const postSchema = new mongoose.Schema<TPost>(
   {
+    id: {
+      type: String,
+      trim: true,
+      unique: true,
+    },
     title: {
       type: String,
       trim: true,
