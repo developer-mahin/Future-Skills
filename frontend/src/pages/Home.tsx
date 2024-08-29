@@ -23,7 +23,7 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/cards`, {
+        const response = await axios.get(`https://futureslikksbackend.vercel.app/cards`, {
           params: {
             searchTerm: searchTerm,
           },
